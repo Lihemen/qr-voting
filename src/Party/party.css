@@ -1,0 +1,37 @@
+.party-create-btn {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid #333;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.party-create-btn svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.party-create-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transition: all 0.2s ease;
+}
+.auto-grid-300 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background: #fff;
+  box-shadow: var(--shadow);
+  padding: 10px;
+  border-radius: 10px;
+}
+.card p {
+  margin-top: 10px;
+}
+.card p:last-child {
+  margin-bottom: 10px;
+}

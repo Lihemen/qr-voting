@@ -1,0 +1,29 @@
+.qr-scanner {
+  margin: 20px auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.row .col {
+  flex: 1;
+  padding: 0 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .row {
+    flex-direction: column;
+    justify-content: stretch;
+  }
+}
+.qr-code {
+  width: 80%;
+  height: 805;
+}

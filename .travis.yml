@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 14
+before_script:
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: fyp-qr-voting
+  on:
+    branch: main
+  api_key:
+    secure: N9dg0oD1/ieKqODfnzfVHqkuwJ0WIsm79LffVoUsbi1v8QetAZtPGtAci2y0bT+gg5SLwguxOd/Oqrk6UE9sdMyZzdwSMSzbdXrBvPo3UTxMxbKFl3Wz0R8cDCYhbroQ95PILxldvBCihhcWxYrS2GmuKA7xECS1+RiOcmqbRe6daIp/tRqWteQPv962iGm0tJLznh26Zi9fS+h61Ok5gwv6d5GvZ+gARNmw6HWNbB6knu/rLVHcicZoU0zwsiD0eMWEuGRs3kK0Ok7X3if3aEAScoLzt7AgGk+RRZ0x7BfwQm5162iYPu0ti8pgtx0G91WVe7BPWpKakHz9bdi15/3OhQs7OK3yV8YFIQ8WH+YuevpNKnBVbZ5rjPUShSSzD4xVGhVlS0u1LgAsiCUMxxbZlWe0IxJKXc2yBObZBjYg/Bptn1qOj2eD5DTPWhiAC6tJlKGcD1GcMBKjDCKYnSf3XxfyhHl6bwYnqSuJZosNX80pmxILSk44M8iM0f9pX3m3ryUB+2C+aTxh+HnASCSGSxGtezZlDkuAuK6UCE2Tt49BaJwBhmNT66V/3jMZt0Y+xxYl9n+2NMFIlPhb19313mMgSRVDDB1zAGCiXb1A1Pl/GjE71cIqUq208U5sDSv9rqZHSCVSfD+sUk/FjuPpWminPH1ENlrn3oDkWVI=
